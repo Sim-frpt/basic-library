@@ -18,7 +18,7 @@ li::before {
 }
 
 .form__section {
-  /*display: none;*/
+  display: none;
 }
 
 .form__component:first-child {
@@ -129,4 +129,3 @@ button, .button__save-book {
 button:hover, .button__save-book:hover {
   background: #AA5C39;
 }
-
