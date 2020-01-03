@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500i,700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <h1 class="section__title">My Library</h1>
+  <button class="button__new-book">New Book</button>
+  <div class="form__section">
+    <form class="form__new-book" action="">
+      <p class="form__component">
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author" required>
+      </p>
+      <p class="form__component">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required>
+      </p>
+      <p class="form__component">
+        <label for="pages">Pages</label>
+        <input type="number" id="pages" name="pages"  required>
+      </p>
+      <p class="form__component">
+        <label for="reading-status">Already Read</label>
+        <input type="checkbox" id="reading-status" name="reading-status">
+      </p>
+      <input class="button__save-book" type="submit" value="Save Book">
+    </form>
+    <button class="button__hide-form">Close Form</button>
+  </div>
+  <div class="books"></div>
+  <script src="assets/scripts/book_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import "reset.css";
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #728DA5;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5em 0;
+}
+
+li::before {
+  font-family: "FontAwesome";
+  content: '\f105';
+  padding-right: 0.2em;
+}
+
+.form__section {
+  /*display: none;*/
+}
+
+.form__component:first-child {
+  margin-top: 1em;
+}
+
+.form__component:nth-child(4) {
+  margin-bottom: 0.5em;
+}
+
+.form__component {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0.5em;
+}
+
+label {
+  letter-spacing: 0.5px;
+}
+
+.form__new-book {
+  margin: auto;
+  width: 20%;
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 2em;
+  color: #AA5C39;
+  text-shadow: 2px 2px 2px #551A00;
+  width: 7em;
+  margin: auto;
+  padding: 2em;
+  text-align: center;
+}
+
+.button__new-book {
+  margin: auto;
+  width: 7em;
+  display: block;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2em;
+  padding: 1em;
+}
+
+.book__card {
+  flex-basis: 25%;
+  border: solid 1px #FFEBAA;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  height: 15em;
+}
+
+.book__card:hover {
+  border-width: 2px;
+  box-shadow: 5px 5px 5px #4A6B8A;
+  transition: all 0.2s;
+}
+
+.book__title {
+  padding: 1em 0;
+  font-size: 1.2em;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #FFEBAA;
+  text-shadow: 1px 1px 1px #806615;
+}
+
+.book__author {
+  padding: 0.5em 0 1em;
+  margin: 0 0 1em;
+  font-size: 1.2em;
+}
+
+.book__reading-status {
+  padding-bottom: 1em;
+}
+
+.button__save-book {
+  margin: auto;
+  width: 7em;
+}
+
+.button__hide-form {
+  display: block;
+  margin: 2em auto;
+  width: 7em;
+}
+
+button, .button__save-book {
+  padding: 0.5em;
+  margin: 0 0.2em;
+  font-size: 0.9em;
+  background: transparent;
+  color: white;
+  border: 1px solid #133453;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+button:hover, .button__save-book:hover {
+  background: #AA5C39;
+}
+
